@@ -1,9 +1,17 @@
-n = input("Предложение - ")
-commas = n.count(',')
-if commas > 0:
-    commaindex = n.find(',')
-    ncount = n.count('н')
-    print(ncount)
-else:
-    print("Букв н нет")
+# Дано предложение. Определить количество букв н, предшествующих первой запятой
+# предложения. Рассмотреть два случая: известно, что запятые в предложении есть;
+# запятых в предложении может не быть.
+
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+if __name__ == '__main__':
+    n = input("Предложение - ")
+    commas = n.count(',')
+    if commas > 0:
+        commaindex = n.find(',')
+        ncount = n.count('н')
+        print(ncount)
+    else:
+        print("Букв н нет")
 
